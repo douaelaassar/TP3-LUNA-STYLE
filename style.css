@@ -1,0 +1,148 @@
+
+/* Styles generaux */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #292929;
+    background-color: #ffffff;
+}
+
+.navbar-brand {
+    letter-spacing: 2px;
+}
+
+.nav-link {
+    margin-left: 12px;
+}
+
+.nav-link:hover {
+    color: #e8c9a0 !important;
+}
+
+/* Page d'accueil */
+.hero {
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    background:
+        linear-gradient(90deg, rgba(255,255,255,0.93), rgba(255,255,255,0.15)),
+        url("https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1600&q=85");
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-content {
+    max-width: 520px;
+    padding: 60px 0;
+}
+
+.hero-content h1 {
+    font-size: clamp(2.3rem, 5vw, 4rem);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    line-height: 1.8;
+}
+
+/* Titres et produits */
+.section-title {
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.product-card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    height: 280px;
+    object-fit: cover;
+}
+
+.product-card .card-body {
+    padding: 20px;
+}
+
+.product-price {
+    color: #967044;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.btn-dark {
+    background-color: #292929;
+    border-color: #292929;
+}
+
+.btn-dark:hover {
+    background-color: #967044;
+    border-color: #967044;
+}
+
+/* Bandeau et pages internes */
+.newsletter {
+    background-color: #967044;
+    color: white;
+}
+
+.page-header {
+    background-color: #f4eee7;
+    padding: 65px 15px;
+}
+
+.page-header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.contact-box {
+    background-color: #faf8f5;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
+}
+
+.form-control {
+    padding: 12px;
+}
+
+.footer {
+    background-color: #292929;
+    color: white;
+    padding: 22px 10px;
+    margin-top: 20px;
+}
+
+/* Adaptation aux petits ecrans */
+@media (max-width: 768px) {
+    .hero {
+        min-height: 400px;
+    }
+
+    .hero-content {
+        padding: 40px 12px;
+    }
+
+    .product-card img {
+        height: 250px;
+    }
+
+    .contact-box {
+        padding: 20px;
+    }
+}
